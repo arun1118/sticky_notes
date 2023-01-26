@@ -3,6 +3,7 @@ import Header from "./Header";
 // import Footer from "./Footer";
 // import CreateNote from "./CreateNote";
 import Note from "./Note";
+import AddRoundedIcon from '@mui/icons-material/AddRounded';
 
 function App(){
     
@@ -143,7 +144,7 @@ function App(){
                     onChange={handleChange}
                     value={note.content} 
                     />
-                    <button onClick={handleAdd}>Add</button>
+                    <button onClick={handleAdd}> <AddRoundedIcon className="add-icon"/> </button>
                 </form>
             </div>
 

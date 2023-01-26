@@ -1,9 +1,13 @@
 import React from "react";
+import TextSnippetRoundedIcon from '@mui/icons-material/TextSnippetRounded';
 
 function Header() {
   return (
     <header>
-      <h1>Keeper</h1>
+      <div class="app-title">
+      <h1>Sticky Notes</h1>
+      <TextSnippetRoundedIcon className="app-icon"/>
+      </div>
     </header>
   );
 }
