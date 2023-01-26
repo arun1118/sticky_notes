@@ -1,11 +1,8 @@
 import React,{useState} from "react";
 
 function CreateNote(props){
-    
-    const [note,setNote]=useState({
-        title: "",
-        content: "",
-    });
+
+    const [note,setNote]=useState({title: "",content: "",});
 
     function handleAdd(event){
         if(note.title==="" && note.content===""){
@@ -13,20 +10,12 @@ function CreateNote(props){
         }
         else{
             if(note.title===""){
-                // console.log("title was empty");
-                // console.log("content was : ", note.content);
                 let minLen=Math.min(note.content.length,5);
-                // console.log("min length : "+minLen);
-                // console.log(note.content.substring(0,minLen));
                 note.title=note.content.substring(0,minLen);
             }
-            // console.log("final : "+note.title+" "+note.content);
             props.onAdd(note);
         }
-        setNote({
-            title: "",
-            content: "",
-        });
+        setNote({title: "",content: "",});
         event.preventDefault();
     }
 
