@@ -9,10 +9,9 @@ root.render(<div><App /></div>);
 
 
 /* To-Do 
-* change Footer
-* enable a delete all notes button
-* use icons instead of ADD/DELETE/EDIT keyword
-* enable edit note feature
+
+* click to expand note
+* tutorial note, hardcode
 * introduce search notes feature
 * enable theme switcher
  */
