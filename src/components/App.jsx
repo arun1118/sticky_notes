@@ -136,13 +136,17 @@ function App(){
                     placeholder="Title"
                     onChange={handleChange}
                     value={note.title}
+                    className="form-light"
+                    id="formTitle"
                     />
                     <textarea
                     name="content"
                     rows="3"
                     placeholder="Write a note..."
                     onChange={handleChange}
-                    value={note.content} 
+                    value={note.content}
+                    className="form-light"
+                    id="formContent"
                     />
                     <button onClick={handleAdd}> <AddRoundedIcon className="add-icon"/> </button>
                 </form>

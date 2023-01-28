@@ -47,7 +47,7 @@ function CreateNote(props){
                 rows="3"
                 placeholder="Write a note..."
                 onChange={handleChange}
-                value={note.content} 
+                value={note.content}
                 />
                 <button onClick={handleAdd}>Add</button>
             </form>
